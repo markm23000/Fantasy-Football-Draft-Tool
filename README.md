@@ -42,3 +42,6 @@ With 17 years of fantasy football experience and 11 years as a league commission
 My goal was to create a practical tool that simplifies complex information and helps fantasy managers make more informed decisions in real time.
 
 This project reflects my interest in identifying user problems, developing functional solutions, and using technology to improve the fantasy sports experience.
+
+
+
