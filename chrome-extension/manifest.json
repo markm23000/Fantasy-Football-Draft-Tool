@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "ESPN → Excel Draft Bridge — Picks Ticker v2.4 FIXED",
+  "version": "2.4.0",
+  "description": "Ticker-only ESPN draft bridge with READY gate, pick-number reconciliation, missed-card recovery, and deterministic Excel rows.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8765/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://fantasy.espn.com/football/draft*"
+      ],
+      "js": [
+        "ticker.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "ESPN → Excel Picks Ticker v2.4",
+    "default_popup": "popup.html"
+  }
+}
